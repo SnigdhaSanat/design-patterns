@@ -5,5 +5,4 @@ public interface Observable {
     public void unRegisterObserver(Observer observer);
     //It notifies ALL observers
     public void notifyAllObservers();
-
 }
