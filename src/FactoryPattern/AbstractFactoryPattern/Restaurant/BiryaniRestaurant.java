@@ -19,6 +19,5 @@ public abstract class BiryaniRestaurant {
 		System.out.println();
 		return biryani;
 	}
-
 	abstract public Biryani cook(boolean veg);
 }
