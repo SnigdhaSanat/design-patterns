@@ -1,6 +1,7 @@
-package FactoryPattern.SimpleFactoryPattern;
+package FactoryPattern.SimpleFactoryPattern.Restaurant;
 
 import FactoryPattern.SimpleFactoryPattern.Product.Biryani;
+import FactoryPattern.SimpleFactoryPattern.Kitchen.SimpleBiryaniKitchen;
 
 public class SimpleBiryaniRestaurant {
 

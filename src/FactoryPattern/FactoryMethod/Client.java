@@ -1,6 +1,8 @@
 package FactoryPattern.FactoryMethod;
 
-import FactoryPattern.FactoryMethod.Product.Biryani;
+import FactoryPattern.FactoryMethod.Restaurant.KolkataBiryaniRestaurant;
+import FactoryPattern.FactoryMethod.Restaurant.LucknowBiryaniRestaurant;
+import FactoryPattern.FactoryMethod.Restaurant.NewBiryaniRestaurant;
 
 public class Client {
 	public static void main(String[] args) {

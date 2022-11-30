@@ -1,5 +1,8 @@
 package FactoryPattern.SimpleFactoryPattern;
 
+import FactoryPattern.SimpleFactoryPattern.Kitchen.SimpleBiryaniKitchen;
+import FactoryPattern.SimpleFactoryPattern.Restaurant.SimpleBiryaniRestaurant;
+
 public class Client {
 	public static void main(String[] args) {
 

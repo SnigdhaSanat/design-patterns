@@ -1,4 +1,4 @@
-package FactoryPattern.FactoryMethod;
+package FactoryPattern.FactoryMethod.Restaurant;
 
 import FactoryPattern.FactoryMethod.Product.Biryani;
 
@@ -12,8 +12,17 @@ public abstract class NewBiryaniRestaurant {
 		Biryani biryani;
 		biryani=cook(isVeg);
 
+		System.out.println("Preparing biryani..");
+		biryani.prepare();
+
 		System.out.println("Reheating biryani");
+		biryani.reheat();
+
 		System.out.println("Delivering biryani");
+		biryani.deliver();
+
+		System.out.println();
+
 		return biryani;
 	}
 

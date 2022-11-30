@@ -1,8 +1,9 @@
-package FactoryPattern.FactoryMethod;
+package FactoryPattern.FactoryMethod.Restaurant;
 
 import FactoryPattern.FactoryMethod.Product.Biryani;
 import FactoryPattern.FactoryMethod.Product.KolkataChickenBiryani;
 import FactoryPattern.FactoryMethod.Product.KolkataVegBiryani;
+import FactoryPattern.FactoryMethod.Restaurant.NewBiryaniRestaurant;
 
 public class KolkataBiryaniRestaurant extends NewBiryaniRestaurant {
 	@Override

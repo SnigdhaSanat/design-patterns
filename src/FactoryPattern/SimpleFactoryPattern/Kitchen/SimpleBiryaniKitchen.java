@@ -1,4 +1,4 @@
-package FactoryPattern.SimpleFactoryPattern;
+package FactoryPattern.SimpleFactoryPattern.Kitchen;
 
 import FactoryPattern.SimpleFactoryPattern.Product.Biryani;
 import FactoryPattern.SimpleFactoryPattern.Product.ChickenBiryani;
