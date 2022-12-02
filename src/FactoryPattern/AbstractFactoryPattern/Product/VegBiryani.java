@@ -12,6 +12,7 @@ public class VegBiryani extends Biryani {
 
 	@Override
 	public void prepare() {
+		//prepare through the Factory
 		System.out.println("Skipping meat");
 		biryaniIngredientFactory.addRice();
 		biryaniIngredientFactory.addSpices();

@@ -11,6 +11,7 @@ public class ChickenBiryani extends Biryani{
 
 	@Override
 	public void prepare() {
+		//prepare through the Factory
 		biryaniIngredientFactory.addMeat();
 		biryaniIngredientFactory.addRice();
 		biryaniIngredientFactory.addSpices();

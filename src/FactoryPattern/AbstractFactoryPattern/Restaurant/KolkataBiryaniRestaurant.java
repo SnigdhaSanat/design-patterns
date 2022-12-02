@@ -8,7 +8,7 @@ import FactoryPattern.AbstractFactoryPattern.Product.VegBiryani;
 
 public class KolkataBiryaniRestaurant extends BiryaniRestaurant {
 
-	//This uses the KolkataBiryaniIngredientFactory, and passes it to the Pizza classes
+	//This uses the KolkataBiryaniIngredientFactory, and passes it to the Biryani classes
 	@Override
 	public Biryani cook(boolean veg) {
 		Biryani biryani=null;

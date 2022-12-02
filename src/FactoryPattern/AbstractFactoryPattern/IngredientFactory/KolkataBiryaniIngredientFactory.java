@@ -3,6 +3,7 @@ package FactoryPattern.AbstractFactoryPattern.IngredientFactory;
 import FactoryPattern.AbstractFactoryPattern.Ingredient.*;
 
 public class KolkataBiryaniIngredientFactory extends BiryaniIngredientFactory {
+	@Override
 	public Meat addMeat() {
 		System.out.println("Adding chicken");
 		return new Chicken();
