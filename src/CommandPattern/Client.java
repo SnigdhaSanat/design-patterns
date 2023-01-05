@@ -20,11 +20,11 @@ public class Client {
 		app.setTasks(3,plumberCommand);
 		app.setTasks(4,salonCommand);
 
-		app.execute(0);
-		app.execute(1);
-		app.execute(2);
-		app.execute(3);
-		app.execute(4);
+		app.callExecute(0);
+		app.callExecute(1);
+		app.callExecute(2);
+		app.callExecute(3);
+		app.callExecute(4);
 	}//main
 
 }
