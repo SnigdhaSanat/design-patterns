@@ -11,15 +11,11 @@ public class Client {
 	public static void main(String[] args) {
 		//----------Pass off Flipkart as the ShoppingAggregator---------------
 		callShoppingAggregator(new FlipkartAdapter(new Flipkart()));
-//		flipkartAdapter.addItemsToCatalogInAggregator();
-//		flipkartAdapter.showItemsInAggregator();
-//		flipkartAdapter.buyInAggregator();
+
+		System.out.println();
 
 		//----------Pass off Amazon as the ShoppingAggregator-----------------
 		callShoppingAggregator(new AmazonAdapter(new Amazon()));
-//		amazonAdapter.addItemsToCatalogInAggregator();
-//		amazonAdapter.showItemsInAggregator();
-//		amazonAdapter.buyInAggregator();
 	}//main
 
 	  static void callShoppingAggregator(ShoppingAggregator shoppingAggregator){
