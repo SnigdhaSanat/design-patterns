@@ -10,16 +10,21 @@ public class Client {
 
 	public static void main(String[] args) {
 		//----------Pass off Flipkart as the ShoppingAggregator---------------
-		ShoppingAggregator flipkartAdapter=new FlipkartAdapter(new Flipkart());
-		flipkartAdapter.addItemsToCatalogInAggregator();
-		flipkartAdapter.showItemsInAggregator();
-		flipkartAdapter.buyInAggregator();
+		callShoppingAggregator(new FlipkartAdapter(new Flipkart()));
+//		flipkartAdapter.addItemsToCatalogInAggregator();
+//		flipkartAdapter.showItemsInAggregator();
+//		flipkartAdapter.buyInAggregator();
 
-		//----------Pass off Amazon as the ShoppingAggregator---------------
-		ShoppingAggregator amazonAdapter=new AmazonAdapter(new Amazon());
-		amazonAdapter.addItemsToCatalogInAggregator();
-		amazonAdapter.showItemsInAggregator();
-		amazonAdapter.buyInAggregator();
+		//----------Pass off Amazon as the ShoppingAggregator-----------------
+		callShoppingAggregator(new AmazonAdapter(new Amazon()));
+//		amazonAdapter.addItemsToCatalogInAggregator();
+//		amazonAdapter.showItemsInAggregator();
+//		amazonAdapter.buyInAggregator();
 	}//main
 
-}
+	  static void callShoppingAggregator(ShoppingAggregator shoppingAggregator){
+		shoppingAggregator.addItemsToCatalogInAggregator();
+		shoppingAggregator.showItemsInAggregator();
+		shoppingAggregator.buyInAggregator();
+	}//callShoppingAggregator
+}//Client
