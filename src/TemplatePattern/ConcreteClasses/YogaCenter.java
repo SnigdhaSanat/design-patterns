@@ -7,6 +7,6 @@ public class YogaCenter extends FitnessCenter {
 	public void physicalActivity() {
 		System.out.println("Yoga in progress");
 	}//physicalActivity
-	
+
 }//FitnessCenter
 

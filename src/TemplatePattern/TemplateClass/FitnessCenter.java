@@ -18,6 +18,7 @@ public abstract class FitnessCenter {
 		System.out.println("Cooling down");
 	}
 
+	/*This is a hook. The subclasses can OPTIONALLY override it*/
 	public void getBonusPoint(){
 		System.out.println("You got bonus points");
 		System.out.println();
