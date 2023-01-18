@@ -15,4 +15,5 @@ public class Client {
 		BoxingCenter boxingCenter=new BoxingCenter();
 		boxingCenter.train();
 	}
+
 }

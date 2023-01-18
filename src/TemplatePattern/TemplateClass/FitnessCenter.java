@@ -22,5 +22,5 @@ public abstract class FitnessCenter {
 		System.out.println("You got bonus points");
 		System.out.println();
 	}
-	
+
 }//FitnessCenter
