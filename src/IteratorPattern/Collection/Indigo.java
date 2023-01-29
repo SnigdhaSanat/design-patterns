@@ -6,11 +6,11 @@ import IteratorPattern.Iterators.IndigoFlightsIterator;
 
 import java.util.ArrayList;
 
-public class IndigoFlights {
+public class Indigo {
 	//Implements an Arraylist of flights
 	ArrayList<Flight> indigoFlights;
 
-	public IndigoFlights(){
+	public Indigo(){
 		indigoFlights=new ArrayList<>();
 		addFlight("Bengaluru", "Hyderabad",1.25,"onTime");
 		addFlight("Delhi", "Bengaluru",2.83,"onTime");

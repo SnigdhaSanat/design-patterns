@@ -1,24 +1,22 @@
 package IteratorPattern.TravelSites;
 
-import IteratorPattern.Collection.GoFirstFlights;
-import IteratorPattern.Collection.IndigoFlights;
+import IteratorPattern.Collection.GoFirst;
+import IteratorPattern.Collection.Indigo;
 import IteratorPattern.Item.Flight;
 import IteratorPattern.Iterators.FlightIterator;
 
-import java.util.ArrayList;
-
 public class TravelSiteWithIterator {
-	IndigoFlights indigoFlights;
-	GoFirstFlights goFirstFlights;
+	Indigo indigo;
+	GoFirst goFirst;
 
-	public TravelSiteWithIterator(IndigoFlights indigoFlightsParam, GoFirstFlights goFirstFlightsParam){
-		indigoFlights = indigoFlightsParam;
-		goFirstFlights = goFirstFlightsParam;
+	public TravelSiteWithIterator(Indigo indigoParam, GoFirst goFirstParam){
+		indigo = indigoParam;
+		goFirst = goFirstParam;
 	}
 	public void getAllFlights(){
 		//Implementation agnostic
 
-		FlightIterator indigoFlightsIterator=indigoFlights.getIterator();
+		FlightIterator indigoFlightsIterator= indigo.getIterator();
 		System.out.println("Indigo flights(with iterator)");
 		while(indigoFlightsIterator.hasNext()){
 			Flight indigoFlight=indigoFlightsIterator.next();
@@ -27,7 +25,7 @@ public class TravelSiteWithIterator {
 
 		System.out.println();
 
-		FlightIterator goFirstFlightsIterator=goFirstFlights.getIterator();
+		FlightIterator goFirstFlightsIterator= goFirst.getIterator();
 		System.out.println("GoFirst flights(with iterator)");
 		while(goFirstFlightsIterator.hasNext()){
 			Flight goFirstFlight=goFirstFlightsIterator.next();

@@ -4,20 +4,21 @@ import IteratorPattern.Item.Flight;
 import IteratorPattern.Iterators.FlightIterator;
 import IteratorPattern.Iterators.GoFirstFlightsIterator;
 
-public class GoFirstFlights {
+public class GoFirst {
 	//implements an Array of flights
 	int maxFlights=4;
 	Flight[] goFirstFlights;
 	int nextIndex =0;
 
-	public GoFirstFlights(){
+	public GoFirst(){
 		goFirstFlights=new Flight[maxFlights];
-		addFlights("Bengaluru", "Kolkata",2.5,"onTime");
-		addFlights("Chennai", "Mumbai",2,"onTime");
-		addFlights("Hyderabad", "Delhi",2.33,"delayed");
-		addFlights("Mumbai", "Bengaluru",1.66,"onTime");
+		//call API actually
+		addFlight("Bengaluru", "Kolkata",2.5,"onTime");
+		addFlight("Chennai", "Mumbai",2,"onTime");
+		addFlight("Hyderabad", "Delhi",2.33,"delayed");
+		addFlight("Mumbai", "Bengaluru",1.66,"onTime");
 	}
-	public void addFlights(String source, String destination, double duration, String status){
+	public void addFlight(String source, String destination, double duration, String status){
 		if(nextIndex <maxFlights){
 			goFirstFlights[nextIndex]=new Flight( source,  destination,  duration,  status);
 			nextIndex +=1;
