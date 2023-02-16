@@ -38,9 +38,4 @@ public class RuleElement implements Rule {
 		System.out.println("Rule element:"+this.name+" Result:"+this.ruleResult);
 		return this.ruleResult;
 	}
-
-
-
-
-
 }//RuleElement

@@ -1,7 +1,6 @@
 package CompositePattern.Composite;
 
 import CompositePattern.Interface.Rule;
-
 import java.util.ArrayList;
 
 /*This is the rule operator, like AND, OR etc., which composes rules*/
