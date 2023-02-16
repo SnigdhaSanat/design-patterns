@@ -18,12 +18,12 @@ public class ToBeStarted implements WorkItemStates{
 
 	@Override
 	public void submitToQA() {
-	System.out.println("You cannot submit to QA without starting the work item.");
+	System.out.println("Work item is yet to be started. You cannot submit to QA without starting the work item.");
 	}
 
 	@Override
 	public void test() {
-		System.out.println("You cannot test without starting the work item.");
+		System.out.println("Work item is yet to be started. You cannot test without starting the work item.");
 	}
 
 

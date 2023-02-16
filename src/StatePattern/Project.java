@@ -19,7 +19,7 @@ public class Project {
 
 		//assign currentState as the default state
 		this.currentState= this.getToBeStarted();
-		System.out.println("Initial current state:"+this.currentState);
+		System.out.println("Initial current state: "+this.currentState);
 	}//Project constructor
 
 	//For each of the methods, call the corresponding method of the current state
@@ -38,7 +38,7 @@ public class Project {
 
 	//Set the current state
 	public void setState(WorkItemStates newState){
-		System.out.println("Updated current state:"+newState);
+		System.out.println("Updated current state: "+newState);
 		this.currentState=newState;
 	}
 

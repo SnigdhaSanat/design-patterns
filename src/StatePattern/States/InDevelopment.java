@@ -23,7 +23,7 @@ public class InDevelopment implements WorkItemStates{
 
 	@Override
 	public void test() {
-		System.out.println("You cannot test without submitting to QA first ");
+		System.out.println("Work item is already in development. You cannot test without submitting to QA first ");
 	}
 
 	@Override
