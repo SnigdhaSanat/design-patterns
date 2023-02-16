@@ -12,6 +12,7 @@ public class InDevelopment implements WorkItemStates{
 
 	@Override
 	public void startDev() {
+		System.out.println("The work item is already in development. You cannot start development twice.");
 	}
 
 	@Override
@@ -22,7 +23,7 @@ public class InDevelopment implements WorkItemStates{
 
 	@Override
 	public void test() {
-
+		System.out.println("You cannot test without submitting to QA first ");
 	}
 
 	@Override

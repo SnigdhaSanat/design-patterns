@@ -16,12 +16,12 @@ public class InTesting implements WorkItemStates {
 
 	@Override
 	public void startDev() {
-
+		System.out.println("The work item is already in testing. You cannot re-start dev at this stage.");
 	}
 
 	@Override
 	public void submitToQA() {
-
+		System.out.println("The work item is already in testing. You cannot re-submit to QA.");
 	}
 
 
