@@ -18,8 +18,8 @@ public class Project {
 		closed=new Closed(this);
 
 		//assign currentState as the default state
-		this.currentState= toBeStarted;
-		System.out.println("Current state:"+this.currentState);
+		this.currentState= this.getToBeStarted();
+		System.out.println("Initial current state:"+this.currentState);
 	}//Project constructor
 
 	//For each of the methods, call the corresponding method of the current state

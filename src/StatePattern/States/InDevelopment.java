@@ -3,6 +3,7 @@ package StatePattern.States;
 import StatePattern.Project;
 
 public class InDevelopment implements WorkItemStates{
+
 	Project project;
 
 	public InDevelopment(Project project){

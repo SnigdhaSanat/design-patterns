@@ -2,7 +2,6 @@ package StatePattern.States;
 
 import StatePattern.Project;
 
-import java.util.Random;
 
 public class InTesting implements WorkItemStates {
 
@@ -11,7 +10,7 @@ public class InTesting implements WorkItemStates {
 
 	public InTesting(Project project){
 		this.project=project;
-		//This is a random stimulation to generate the result of testing
+		//This is a random simulation to generate the result of testing
 		this.testingResult=Math.random()*100;
 	}
 
