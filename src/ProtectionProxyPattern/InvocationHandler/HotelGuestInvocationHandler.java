@@ -15,7 +15,6 @@ public class HotelGuestInvocationHandler implements InvocationHandler {
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		try{
 			String methodName=method.getName();
 			switch(methodName) {
 				case "checkIn":
@@ -26,14 +25,11 @@ public class HotelGuestInvocationHandler implements InvocationHandler {
 
 				case "accessKitchen":
 				case "AccessMonitorRoom":
-				//default:
-					throw new IllegalAccessException();
+				default:
+					System.out.println("Disallowed task for hotel guests");
 
 			}//switch
-		}
-		catch (InvocationTargetException e){
-			e.printStackTrace();
-		}
+
 		return null;
 	}//invoke
 }
