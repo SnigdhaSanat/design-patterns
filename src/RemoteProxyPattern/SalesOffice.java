@@ -1,13 +1,6 @@
 package RemoteProxyPattern;
 
 public class SalesOffice implements SalesOfficeRemote {
-	/*UnicastRemoteObject generates a dynamic stub, that takes request from the client, and passes it on to this remote object 'SalesOffice'*/
-	//private static final long serialVersionUID=2L;
-
-
-
-//	public SalesOffice() throws RemoteException {
-//	}
 
 	double quote=100000;
 

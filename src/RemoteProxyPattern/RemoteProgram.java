@@ -3,7 +3,6 @@ package RemoteProxyPattern;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-import RemoteProxyPattern.SalesOfficeRemote;
 
 public class RemoteProgram extends SalesOffice {
 	public RemoteProgram(){ }
@@ -28,7 +27,6 @@ public class RemoteProgram extends SalesOffice {
 			System.err.println("RemoteProgram Server exception:"+e.toString());
 			e.printStackTrace();
 		}
-
 
 	}//main
 }

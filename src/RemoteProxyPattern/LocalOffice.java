@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 
 public class LocalOffice {
 	SalesOfficeRemote salesOfficeRemote;
+
 	public LocalOffice(SalesOfficeRemote salesOfficeRemote){
 		this.salesOfficeRemote=salesOfficeRemote;
 	}
