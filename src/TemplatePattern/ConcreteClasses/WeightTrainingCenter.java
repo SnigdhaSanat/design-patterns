@@ -12,6 +12,5 @@ public class WeightTrainingCenter extends FitnessCenter {
 	public void getBonusPoint() {
 		//super.getBonusPoint();
 		System.out.println("You got bonus points in weight training");
-		System.out.println();
 	}
 }

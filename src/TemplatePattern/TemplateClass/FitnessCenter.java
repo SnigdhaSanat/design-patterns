@@ -7,6 +7,7 @@ public abstract class FitnessCenter {
 		physicalActivity();
 		coolDown();
 		getBonusPoint();
+		System.out.println("------------");
 	}//train
 
 	public void warmUp(){
@@ -20,6 +21,7 @@ public abstract class FitnessCenter {
 
 	/*This is a hook. The subclasses can OPTIONALLY override it*/
 	public void getBonusPoint(){
-		System.out.println();
+		System.out.println("getBonusPoint() method of base class FitnessCenter called");
 	}
+
 }//FitnessCenter
