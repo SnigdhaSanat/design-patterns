@@ -13,13 +13,14 @@ public abstract class FitnessCenter {
 	public void warmUp(){
 		System.out.println("Warming up");
 	}
+
 	public abstract void physicalActivity();
 
 	public void coolDown(){
 		System.out.println("Cooling down");
 	}
 
-	/*This is a hook. The subclasses can OPTIONALLY override it*/
+	/**This is a hook. The subclasses can OPTIONALLY override it*/
 	public void getBonusPoint(){
 		System.out.println("getBonusPoint() method of base class FitnessCenter called");
 	}

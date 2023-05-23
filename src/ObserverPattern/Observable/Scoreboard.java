@@ -9,7 +9,7 @@ public class Scoreboard implements Observable {
 
     List<Observer> observerList;
 
-    /*declare the states here. Note that this is the UNIVERSAL set of states any observer will ever need */
+    /**declare the states here. Note that this is the UNIVERSAL set of states any observer will ever need */
     private int runs;
     private int wickets;
     private int overs;
@@ -36,7 +36,7 @@ public class Scoreboard implements Observable {
     @Override
     public void notifyAllObservers() {
         for(Observer observer:observerList){
-            /*Note that update() does not pass states to the observer. The observer PULLS them if it requires to,
+            /**Note that update() does not pass states to the observer. The observer PULLS them if it requires to,
             * using the getter methods. This gives flexibility to the observer to get the states it needs, whenever it needs.*/
             observer.update();
         }//for

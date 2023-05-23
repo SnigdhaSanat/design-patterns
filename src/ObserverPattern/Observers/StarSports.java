@@ -8,7 +8,7 @@ public class StarSports implements Observer {
 
 	Observable observable;
 
-	/*declare the states here. Note that this is s SUBSET of states this concrete observer needs */
+	/**declare the states here. Note that this is s SUBSET of states this concrete observer needs */
 	private int runs;
 	private int wickets;
 

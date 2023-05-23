@@ -10,6 +10,7 @@ public class LocalClient {
 		try{
 
 			Registry registry = LocateRegistry.getRegistry(null);
+
 			//Note that the return type is of type interface SalesOfficeRemote
 			SalesOfficeRemote salesOfficeRemoteProxy = (SalesOfficeRemote) registry.lookup("mySalesOffice");
 

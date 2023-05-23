@@ -28,6 +28,7 @@ public class InTesting implements WorkItemStates {
 	@Override
 	public void test(){
 		System.out.println("Testing...");
+
 		//if testing passes, set the state to closed
 		if((int)this.testingResult<50){
 			System.out.println("Testing passed");
